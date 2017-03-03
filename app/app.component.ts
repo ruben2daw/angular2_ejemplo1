@@ -1,6 +1,18 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
-  template: '<h1>Hello World</h1>'
+  templateUrl: 'app/app.component.html',
+  styles:[ `h1{color:blueviolet}`]
 })
-export class AppComponent { }
+export class AppComponent {
+
+ title: string;
+
+ public imgLink="http://lorempixel.com/400/200/";
+
+
+  constructor(){
+    this.title="TITULAZO";
+  }
+
+}
